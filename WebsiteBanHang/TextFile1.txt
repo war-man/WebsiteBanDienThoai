@@ -1,1 +1,2 @@
 ﻿- Hoàn thành bài 1 - Database quản lý bán hàng và có thể phát triển thêm ( 7/2/2020)
+- Hoàn thành bài 2 - Hoàn thành KhachHangController và 4 view (Thêm Dữ liệu KH , TV , Loai TV)
