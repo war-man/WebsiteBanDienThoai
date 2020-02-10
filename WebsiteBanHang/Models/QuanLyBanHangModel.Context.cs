@@ -7,9 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using WebsiteBanHang.Models;
-
-namespace WebsiteBanHang
+namespace WebsiteBanHang.Models
 {
     using System;
     using System.Data.Entity;
