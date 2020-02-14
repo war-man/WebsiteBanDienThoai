@@ -1,0 +1,35 @@
+﻿@using System.Collections
+@using WebsiteBanHang.Models;
+@{
+    IEnumerable<SanPham> lstSP = (IEnumerable<SanPham>)ViewBag.ListSP;}
+@{
+    IEnumerable<SanPham> lstDT = (IEnumerable<SanPham>)ViewBag.ListDT;}
+@{
+    ViewBag.Title = "SanPham1";
+    Layout = "~/Views/Layout/HomeLayout.cshtml";
+}
+
+<h2>SanPham1</h2>
+<div class="container">
+    <div class="content-top">
+        <h1>LAPTOP NEW</h1>
+        @*Chèn Patial View cho một view*@
+        @*Cách 1*@
+        @Html.Partial("SanPhamPartial", lstSP);
+
+        @*Cách 2*@
+        @*@Html.Action("SanPhamPartial")*@
+    </div>
+</div>
+<div class="container">
+    <div class="content-top">
+        <h1>MOBILE NEW</h1>
+        @*Chèn Patial View cho một view*@
+        @*Cách 1*@
+        @Html.Partial("SanPhamPartial", lstDT);
+
+        @*Cách 2*@
+        @*@Html.Action("SanPhamPartial")*@
+    </div>
+</div>
+

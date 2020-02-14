@@ -7,16 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebsiteBanHang.Models
+using WebsiteBanHang.Models;
+
+namespace WebsiteBanHang
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class QLbanhangEntities : DbContext
+    public partial class QuanLyBanHangEntities : DbContext
     {
-        public QLbanhangEntities()
-            : base("name=QLbanhangEntities")
+        public QuanLyBanHangEntities()
+            : base("name=QuanLyBanHangEntities")
         {
         }
     
@@ -32,9 +34,11 @@ namespace WebsiteBanHang.Models
         public virtual DbSet<KhachHang> KhachHangs { get; set; }
         public virtual DbSet<LoaiSanPham> LoaiSanPhams { get; set; }
         public virtual DbSet<LoaiThanhVien> LoaiThanhViens { get; set; }
+        public virtual DbSet<LoaiThanhVien_Quyen> LoaiThanhVien_Quyen { get; set; }
         public virtual DbSet<NhaCungCap> NhaCungCaps { get; set; }
         public virtual DbSet<NhaSanXuat> NhaSanXuats { get; set; }
         public virtual DbSet<PhieuNhap> PhieuNhaps { get; set; }
+        public virtual DbSet<Quyen> Quyens { get; set; }
         public virtual DbSet<SanPham> SanPhams { get; set; }
         public virtual DbSet<ThanhVien> ThanhViens { get; set; }
     }
